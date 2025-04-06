@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Activity 2</title>
+    <link rel="icon" type="image/x-icon" href="Logo_last.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      /* Reset and base styles */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "Work Sans", sans-serif;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 1.6;
+        background-color: #f0f3f5; /* Light gray */
+        color: #333; /* Dark gray */
+        margin: 0;
+      }
+
+      .container {
+        width: 100%;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #bbe9ff; /* Light blue */
+        /* padding: 20px; */
+      }
+
+      .header{
+  height:5%;
+  width:100%
+}
+
+      .company-logo {
+        height: 100%;
+      }
+
+      .content-container {
+        margin-top: 1rem;
+        width: 100%;
+        max-width: 1250px;
+        background-color: #ffffff; /* White */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        border-radius: 8px; /* Rounded corners */
+
+        img {
+          /* max-width: 100%; */
+          /* width: 45%; */
+          display: block;
+          margin: 1rem auto;
+          border-radius: 8px;
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+      }
+
+      .lesson-title {
+        font-size: 2rem;
+        font-weight: 700;
+        color: #333; /* Dark gray */
+        margin-bottom: 1rem;
+        text-align: center;
+        text-decoration: underline; /* Underline style */
+      }
+      .button-container {
+  position: fixed; /* Fix the button to the screen */
+  top: 10%; /* Set distance from top */
+  right: 10%; /* Set distance from left */
+  z-index: 100; /* Ensure the button stays above other content */
+}
+      .button {
+        
+        display: inline-block;
+        margin-top: 20px;
+        padding: 10px 15px;
+        background-color: #4CAF50; /* Green */
+        color: white;
+        border: none;
+        border-radius: 5px;
+        text-decoration: none;
+        font-size: 1.4rem;
+        cursor: pointer;
+        text-align: center;
+      }
+
+      .probing-question {
+        margin-top: 1.5rem;
+        background-color: #f0f8ff; /* Light blue */
+        padding: 10px;
+        border-radius: 8px;
+      }
+
+      .probing-question div {
+        font-size: 1.2rem;
+        font-weight: 600;
+        color: #444; /* Dark gray */
+        margin-bottom: 5px;
+      }
+
+      .probing-question p {
+        color: #666; /* Medium gray */
+      }
+
+      h2,
+      h3,
+      h4 {
+        color: #333; /* Dark gray */
+        margin-top: 1.5rem;
+        font-weight: bold; /* Bold font for all headings */
+      }
+
+      .learn-about {
+        background-color: palegreen;
+        border-radius: 1rem;
+        text-align: left;
+        margin: 1rem;
+        padding: 1rem 0;
+        li {
+          list-style-position: inside;
+          padding-left: 1rem;
+        }
+      }
+
+      p,
+      li {
+        color: #555; /* Medium gray */
+        font-size: 1.4rem;
+      }
+      footer {
+        width: 100%;
+      background: linear-gradient(145deg, #e6e6e6, #ffffff);
+      border-radius: 15px;
+      box-shadow: 5px 5px 15px #b3b3b3, -5px -5px 15px #ffffff;
+      padding: 20px;
+      text-align: center;
+      margin-top: 30px;
+      color: #333;
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+
+    footer::after {
+      content: '';
+      position: relative;
+      
+      width: 100%;
+      height: 100%;
+      background: rgba(255, 255, 255, 0.3);
+      backdrop-filter: blur(10px);
+      /* z-index: 1; */
+      border-radius: 15px;
+    }
+
+    footer span {
+      position: relative;
+    }
+
+      ol,
+      ul {
+        margin-bottom: 1.5rem;
+        padding-left: 20px;
+      }
+      .button-container {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px; /* Optional */
+    }
+
+      hr {
+        border: none; /* Remove default border */
+        height: 2px; /* Set the height of the horizontal rule */
+        background-color: palevioletred; /* Color of the rule */
+      }
+      @media (max-width: 768px) {
+        .company-logo {
+          height: 75%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header" style="background-color:white;width:100%; box-shadow:5px 5px 10px rgb(0, 0, 0);  padding-bottom:10px;">
+        <img src="Logo_last.png" width="5%" style="float:left; margin-top:1.5%;" class="img-responsive">
+        <span> <img src="header.png" width="20%" height="80%" class="img-responsive"></span>
+      </div>
+
+      <div class="content-container">
+       
+          <div class="lesson-title">Understanding Weight And Identifying Light And Heavy Objects</div>
+          <div class="lesson-content">
+            <div>
+              <h2 style="color: red;">What is Multiplication?</h2>
+              <p>
+                Multiplication is a faster way of adding the same number multiple times.
+                <br><br><b style="color:#4CAF50;">Example:</b>
+<br>Instead of writing <b>2 + 2 + 2 + 2 = 8</b>, we write <b>4 × 2 = 8</b>.
+
+
+<br><br>Instead of writing <b>3 + 3 + 3 = 9</b>, we write <b>3 × 3 = 9</b>.
+              </p>
+              <h2 style="color: blueviolet;text-align: center;"><u>Understanding Multiplication Tables:</u></h2>
+              <p>
+                When creating a times table, each new answer is found by adding the base number to the previous answer. 
+              </p>
+              <h2 style="color: blueviolet;">2 times table: </h2>
+              <p>
+                We get the next answer by <b>adding 2</b> to the previous answer.
+                <br><b>We can find the next answer by adding 2 to the previous answer.</b>
+
+              </p>
+              <ul>
+                <li>
+                  Start with the first answer:
+                  <br>1 × 2 = 2
+                </li>
+                <li>
+                  To find 2 × 2, add 2 to the previous answer (2):
+                  <br>2 + 2 = 4
+ <br>So, 2 × 2 = 4
+                </li>
+                <li>
+                  To find 3 × 2, add 2 to the previous answer (4):
+                  <br>4 + 2 = 6
+ <br>So, 3 × 2 = 6
+                </li>
+                <li>
+                  To find 4 × 2, add 2 to the previous answer (6):
+                  <br>6 + 2 = 8
+ <br>So, 4 × 2 = 8
+                </li>
+                <li>
+                  To find 5 × 2, add 2 to the previous answer (8):
+                  <br>8 + 2 = 10
+ <br>So, 5 × 2 = 10
+                </li>
+                <li>
+                  To find 6 × 2, add 2 to the previous answer (10):
+                  <br>10 + 2 = 12
+ <br>So, 6 × 2 = 12
+                </li>
+                <li>
+                  To find 7 × 2, add 2 to the previous answer (12):
+                  <br>12 + 2 = 14
+ <br>So, 7 × 2 = 14
+                </li>
+                <li>
+                  To find 8 × 2, add 2 to the previous answer (14):
+                  <br>14 + 2 = 16
+ <br>So, 8 × 2 = 16
+                </li>
+                <li>To find 9 × 2, add 2 to the previous answer (16):
+                  <br>16 + 2 = 18
+                  <br>So, 9 × 2 = 18</li>
+                <li>
+                  To find 10 × 2, add 2 to the previous answer (18):
+                  <br>18 + 2 = 20
+ <br>So, 10 × 2 = 20
+                </li>
+                <li>
+                  To find 11 × 2, add 2 to the previous answer (20):
+                  <br>20 + 2 = 22
+ <br>So, 11 × 2 = 22
+                </li>
+                <li>
+                  To find 12 × 2, add 2 to the previous answer (22):
+                  <br>22 + 2 = 24
+ <br>So, 12 × 2 = 24
+                </li>
+                <li>
+                  To find 13 × 2, add 2 to the previous answer (24):
+                  <br>24 + 2 = 26
+ <br>So, 13 × 2 = 26
+                </li>
+                <li>
+                  To find 14 × 2, add 2 to the previous answer (26):
+                  <br>26 + 2 = 28
+ <br>So, 14 × 2 = 28
+                </li>
+                <li>
+                  To find 15 × 2, add 2 to the previous answer (28):
+                  <br>28 + 2 = 30
+ <br>So, 15 × 2 = 30
+
+                </li>
+              </ul>
+              <p>
+                This pattern continues all the way through the 2 times table.
+                <br><img width="40%" src="./images/1.png" alt="">
+                <br>In the 2 times table, we can also skip count by 2s each time to get the next answer:
+<br><br><b>2, 4, 6, 8, 10, 12, 14, 16, 18, 20...</b>
+
+              </p>
+              <h2 style="color: blueviolet;">3 Times Table</h2>
+              <p>
+                We get the next answer by <b>adding 3</b> to the previous answer.
+
+                <br><br><b>Start with the first answer:</b>
+<br>1 × 3 = 3
+
+
+<br><br>To find <b>2 × 3</b>, add <b>3</b> to the previous answer (3):
+<br><b>3 + 3 = 6</b>
+
+
+<br>So, <b>2 × 3 = 6</b>
+
+
+<br><br>To find <b>3 × 3</b>, add <b>3</b> to the previous answer (6):
+<br><b>6 + 3 = 9</b>
+
+
+<br>So, <b>3 × 3 = 9</b>
+
+
+<br><br>This pattern continues for the whole <b>3 times table</b>.
+<br><img width="40%" src="./images/2.png" alt="">
+              </p>
+
+              <h2 style="color: blueviolet;">4 Times Table</h2>
+              <p>
+                We get the next answer by <b>adding 4</b> to the previous answer.
+                <br><br><b>Start with the first answer:</b>
+<br><b>1 × 4 = 4</b>
+
+
+<br><br>To find <b>2 × 4</b>, add <b>4</b> to the previous answer (4):
+<br><b>4 + 4 = 8</b>
+
+
+<br>So, <b>2 × 4 = 8</b>
+
+
+<br><br>To find <b>3 × 4</b>, add <b>4</b> to the previous answer (8):
+<br><b>8 + 4 = 12</b>
+
+
+<br>So, <b>3 × 4 = 12</b>
+
+
+<br><br>This pattern continues for the whole <b>4 times table</b>.
+<br><img width="40%" src="./images/3.png" alt="">
+              </p>
+
+              <h2 style="color: blueviolet;">5 Times Table</h2>
+              <p>
+                We get the next answer by <b>adding 5</b> to the previous answer.
+                <br><br><b>Start with the first answer:
+  <br>1 × 5 = 5</b>
+
+
+  <br><br>To find <b>2 × 5</b>, add <b>5</b> to the previous answer (5):
+<br><b>5 + 5 = 10</b>
+
+
+<br>So, <b>2 × 5 = 10</b>
+
+
+<br><br>To find <b>3 × 5</b>, add <b>5</b> to the previous answer (10):
+<br><b>10 + 5 = 15</b>
+
+
+<br>So, <b>3 × 5 = 15</b>
+
+
+<br><br>This pattern continues for the whole <b>5 times table</b>.
+<br><img width="40%" src="./images/4.png" alt="">
+<br>We can also learn the table of 5 by skip counting by 5s. Let’s start from 0 and count by 5s:
+<br><br>0, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50...
+<br><br>Each number is 5 more than the one before it.
+
+              </p>
+
+              <h2 style="color: blueviolet;">6 times table:</h2>
+              <p>
+                We get the next answer by <b>adding 6</b> to the previous answer.
+                <br><br><b>Start with the first answer:</b>
+<br><b>1 × 6 = 6</b>
+
+
+<br><br>To find <b>2 × 6</b>, add <b>6</b> to the previous answer (6):
+<br><b>6 + 6 = 12</b>
+
+
+<br>So, <b>2 × 6 = 12</b>
+
+
+<br><br>To find <b>3 × 6</b>, add <b>6</b> to the previous answer (12):
+<br><b>12 + 6 = 18</b>
+
+
+<br>So, <b>3 × 6 = 18</b>
+<br><br>This pattern continues for the whole <b>6 times table</b>.
+<br><img width="40%" src="./images/5.png" alt="">
+              </p>
+
+              <h2 style="color: blueviolet;">7 Times Table</h2>
+              <p>
+                We get the next answer by <b>adding 7</b> to the previous answer.
+                <br><br><b>Start with the first answer:
+  <br> 1 × 7 = 7</b>
+
+
+  <br><br>To find <b>2 × 7</b>, add <b>7</b> to the previous answer (7):
+<br><b>7 + 7 = 14</b>
+
+
+<br>So, <b>2 × 7 = 14</b>
+
+
+<br><br>To find <b>3 × 7</b>, add <b>7</b> to the previous answer (14):
+<br><b>14 + 7 = 21</b>
+
+
+<br>So, <b>3 × 7 = 21</b>
+
+
+<br>This pattern continues for the whole <b>7 times table</b>.
+<br><img width="40%" src="./images/6.png" alt="">
+              </p>
+
+              <h2 style="color: blueviolet;">8 Times Table</h2>
+              <p>
+                We get the next answer by <b>adding 8</b> to the previous answer.
+                <br><img width="40%" src="./images/7.png" alt="">
+              </p>
+              <h2 style="color: blueviolet;">9 Times Table</h2>
+              <p>
+                We get the next answer by <b>adding 9</b> to the previous answer.
+                <br><img width="40%" src="./images/9.png" alt="">
+                <br><br><b>We can use the Finger Trick for table of 9:</b>
+              </p>
+              <ol>
+                <li>
+                  <b>Hold your hands in front of you.</b>
+                  <br>Imagine your hands are numbered from left to right, from 1 to 10. So, your <b>left pinky</b> is number 1, and your <b>right pinky </b>is number 10.
+                  <br><img width="50%" src="./images/10.png" alt="">
+                </li><br>
+                <li>
+                  <b>Pick the number you want to multiply by 9.</b>
+                  <br>In this case, we want to find (3 × 9).
+                </li><br>
+                <li>
+                  <b>Fold down the finger that corresponds to the number you are multiplying by 9.</b>
+                  <br>For <b>3 times 9</b>, fold your <b>3rd finger</b> (the third one from the left).
+                  <br><img width="50%" src="./images/11.png" alt="">
+                </li><br>
+                <li>
+                  <b>Look at the fingers to the left of the folded finger.</b>
+                  <br>These represent the <b>tens</b> place in your answer.
+ <br>For <b>3 times 9</b>, there are <b>2 fingers on the left</b>.
+                </li><br>
+                <li>
+                  <b>Look at the fingers to the right of the folded finger.</b>
+                  <br>These represent the <b>ones</b> place in your answer.
+ <br>For <b>3 times 9</b>, there are <b>7 fingers on the right</b>.
+ <br><img width="50%" src="./images/12.png" alt="">
+                </li><br>
+                <li>
+                 <b> Combine the two numbers:</b>
+                 <br>The answer is <b>27</b>.
+                </li>
+              </ol>
+              <h2 style="color: blueviolet;">10 Times Table</h2>
+              <p>
+                We get the next answer by <b>adding 10</b> to the previous answer.
+                <br><img width="35%" src="./images/13.png" alt="">
+                <br><br><b>We can also learn the table of 10 by skip counting by 10s.</b>
+<br><br>Let’s start from 0 and count by 10s:
+<br><br><b>0, 10, 20, 30, 40, 50, 60, 70, 80, 90, 100...</b>
+<br><br>Each number is 10 more than the one before it.
+
+              </p>
+              <h2 style="color: blueviolet;">11 Times Table</h2>
+              <p>
+                We get the next answer by <b>adding 11</b> to the previous answer.
+                <br><img width="35%" src="./images/14.png" alt="">
+              </p>
+
+              <h2 style="color: blueviolet;">12 Times Table</h2>
+              <p>
+                We get the next answer by <b>adding 12</b> to the previous answer.
+                <br><img width="35%" src="./images/15.png" alt="">
+              </p>
+
+              <h2 style="color: blueviolet;">13 Times Table</h2>
+              <p>
+                We get the next answer by <b>adding 13</b> to the previous answer.
+                <br><img width="35%" src="./images/16.png" alt="">
+              </p>
+
+              <h2 style="color: blueviolet;">14 Times Table</h2>
+              <p>
+                We get the next answer by <b>adding 14</b> to the previous answer.
+                <br><img width="35%" src="./images/17.png" alt="">
+              </p>
+
+              <h2 style="color: blueviolet;">15 Times Table</h2>
+              <p>
+                We get the next answer by <b>adding 15</b> to the previous answer.
+                <br><img width="35%" src="./images/18.png" alt="">
+              </p>
+
+              <h2 style="color: blueviolet;text-align: center;"><u>Understanding Turnaround Facts in Multiplication:</u></h2>
+              <h2 style="color: blueviolet;">What are Turnaround Facts? </h2>
+              <p>
+                Turnaround facts in multiplication show that changing the order of the numbers (factors) does not change the answer (product). 
+                <br><br>This means you can multiply numbers in any order, and the result will always be the same.
+<br><br><b>Example of a Turnaround Fact
+  <br><br>Let’s look at this multiplication fact:
+  <br><img width="40%" src="./images/19.png" alt="">
+  <br>Even though the numbers are swapped, the answer stays the same!
+  <br><br>Why Does This Happen?
+  <br><br>Think of it like arranging objects in groups. Imagine you have 3 groups of 4 apples:
+  <br><img width="40%" src="./images/20.png" alt="">
+  <br>Since each group has 4 apples, you count: 4 + 4 + 4 = 12 → 3 × 4 = 12
+  <br><br>Now, if you switch it and have 4 groups of 3 apples:
+  <br><img width="40%" src="./images/21.png" alt="">
+  <br>Since each group has 3 apples, you count: 3 + 3 + 3 + 3 = 12 → 4 × 3 = 12
+  <br><br>No matter how you arrange them, the total is still 12.</b>
+
+              </p>
+            </div>
+      </div>
+      
+    </div>
+    <footer>
+      <span>Created By Team Way To Succeed</span>
+    </footer>
+  </body>
+</html>
